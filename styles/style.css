@@ -533,7 +533,7 @@ h3 {
     gap: 34px;
     color: #464646;
 }
-
+.other-news_container,
 .news-page__middle {
     max-width: 800px;
     width: 100%;
@@ -940,6 +940,19 @@ ul {
         font-size: 30px;
         line-height: 34px;
     }
+    .other-news_container {
+        max-width: none;
+    }
+    .news-page__content {
+        display: none;
+    }
+    .news-page__aside {
+        width: 100%
+    }
+    .new-page__form .form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media (max-width:830px) {
@@ -1023,8 +1036,8 @@ ul {
         gap: 14px;
     }
 
-    .news-page__content {
-        display: none;
+     .new-page__form .form {
+       display: flex;
     }
 
     .news-page-container {
