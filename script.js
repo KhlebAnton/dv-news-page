@@ -1,6 +1,10 @@
 const modalBtns = document.querySelectorAll('[data-modal-btn]');
 const modals = document.querySelectorAll('[data-modal]');
-
+modals.forEach(modal => {
+    modal.querySelector('.banner-form__close').addEventListener('click', ()=> {
+        closeModal(modal)
+    })
+})
 function openModal(id) {
     modals.forEach(modal => modal.classList.remove('is-open'));
     modals.forEach(modal => {
